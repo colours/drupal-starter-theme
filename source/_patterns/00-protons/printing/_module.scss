@@ -1,0 +1,93 @@
+@import '../variables';
+// Classes to add padding to container elements
+.module {
+    padding: $spacer;
+}
+
+.module--none {
+    padding: 0;
+}
+
+.module--xs {
+    padding: $spacer-xs;
+
+    &-v {
+        padding-top: $spacer-xs;
+        padding-bottom: $spacer-xs;
+    }
+
+    &-h {
+        padding-left: $spacer-xs;
+        padding-right: $spacer-xs;
+    }
+}
+
+.module--sm {
+    padding: $spacer-sm;
+
+    &-v {
+        padding-top: $spacer-sm;
+        padding-bottom: $spacer-sm;
+    }
+
+    &-h {
+        padding-left: $spacer-sm;
+        padding-right: $spacer-sm;
+    }
+}
+
+.module--md {
+    padding: $spacer-md;
+
+    &-v {
+        padding-top: $spacer-md;
+        padding-bottom: $spacer-md;
+    }
+
+    &-h {
+        padding-left: $spacer-md;
+        padding-right: $spacer-md;
+    }
+}
+
+.module--lg {
+    padding: $spacer-lg;
+
+    &-v {
+        padding-top: $spacer-lg;
+        padding-bottom: $spacer-lg;
+    }
+
+    &-h {
+        padding-left: $spacer-lg;
+        padding-right: $spacer-lg;
+    }
+}
+
+.module--xl {
+    padding: $spacer-xl;
+
+    &-v {
+        padding-top: $spacer-xl;
+        padding-bottom: $spacer-xl;
+    }
+
+    &-h {
+        padding-left: $spacer-xl;
+        padding-right: $spacer-xl;
+    }
+}
+
+.module--xxl {
+    padding: $spacer-xxl;
+
+    &-v {
+        padding-top: $spacer-xxl;
+        padding-bottom: $spacer-xxl;
+    }
+
+    &-h {
+        padding-left: $spacer-xxl;
+        padding-right: $spacer-xxl;
+    }
+}

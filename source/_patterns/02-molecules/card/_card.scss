@@ -1,0 +1,26 @@
+// All component Sass needs non-printing base config
+@import '../../00-protons/variables';
+
+// To change default bootstrap card variables, SEE ~bootstrap/scss/variables
+// Add bootstrap variables here
+$card-border-width: 1px;
+
+@import '~bootstrap/scss/card';
+
+// Add custom code here
+.border-none {
+    border-style: none;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-title {
+    font-family: $font-family-serif;
+    font-size: $h2-font-size;
+}
+
+.card-body {
+    padding: $spacer-lg;
+}

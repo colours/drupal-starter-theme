@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * tab-content
+ *
+ * Available variables for tab-content:
+ *    - tab_content.variable_name [variable_type]: Description of the variable. Example below.
+ *    - tab_content.invert [bool]: When set, colors will be inverted for light display on dark background.
+ */
+#}
+
+<section class="section module--xl-v tab-content">
+    <div class="container">
+        <h2 class="h1">{{ tab_content.title }}</h2>
+        <div class="row no-gutters justify-content-between tab-container" id="js-tab-content">
+            <div class="col-md-3 col--tab-nav">
+                <ul class="nav flex-column tab-nav" id="tabs" role="tablist" aria-orientation="vertical">
+                    {% for tab in tab_content.tabs %}
+                    <li>
+                        <a href="#{{ tab.title|lower|replace({' ': '-'}) }}" class="tab-link {% if loop.first %}active show{% endif %}" data-toggle="tab" aria-selected="true" aria-controls="tab-one">{{ tab.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-9 col--tab-content">
+                <div class="tab-content" id="tab-content">
+                {% for tab in tab_content.tabs %}
+                    <div class="tab-pane fade {% if loop.first %}active show{% endif %}" id="{{ tab.title|lower|replace({' ': '-'}) }}" role="tabpanel" aria-labelledby="tab-one">
+                        {{ tab.content|raw }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,94 @@
+@import '../../../00-protons/variables';
+
+// To change default bootstrap nav variables,
+// copy from ~bootstrap/scss/variables to here
+
+$nav-link-disabled-color: $gray-600;
+
+@import "~bootstrap/scss/nav";
+
+.navbar__utility div {
+    display: inline-block;
+}
+
+.navbar__utility > .contextual {
+    right: auto;
+    left: 0;
+}
+
+@include media-breakpoint-down(md) {
+    .nav--utility {
+        flex-direction: column;
+
+        .nav-item {
+            display: inline-block;
+        }
+
+        .nav-link {
+            color: $white;
+        }
+    }
+
+    .nav--language {
+        .nav-link {
+            border: 1px solid $white;
+            padding: 7px 20px;
+            color: $white;
+
+            &:hover,
+            &.is-active,
+            &.active {
+                border-color: $c-blue;
+                color: $white;
+                background-color: $c-blue;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar__utility {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $c-anti-flash-white;
+        box-shadow: 500px 0 0 $c-anti-flash-white;
+
+        .nav {
+            display: inline-flex;
+        }
+
+        .nav-link {
+            margin: 6px 15px;
+            padding: 1px 5px;
+            font-size: $font-size-xxs;
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+            color: $c-cadet;
+
+            &:hover,
+            &.is-active,
+            &.active {
+                color: $c-blue;
+            }
+        }
+    }
+
+    .nav--language {
+        padding-left: 10px;
+
+        .nav-link {
+            margin: 6px 8px;
+            padding: 1px 2px;
+            
+            &:hover {
+                color: $c-blue;
+            }
+
+            &.is-active,
+            &.active {
+                border-bottom: 2px solid $c-cadet;
+            }
+        }
+    }
+}

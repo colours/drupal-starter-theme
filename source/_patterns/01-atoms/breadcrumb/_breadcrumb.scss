@@ -1,0 +1,24 @@
+@import '../../00-protons/variables';
+@import '~bootstrap/scss/breadcrumb';
+
+.breadcrumb {
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.breadcrumb-item {
+    + .breadcrumb-item {
+        padding-left: 1rem;
+
+        &::before {
+            content: "\ea01";
+            display: inline-block; // Suppress underlining of the separator in modern browsers
+            padding-right: 1rem;
+            width: 1rem;
+            font-size: 9px;
+            font-family: "iconfont";
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}

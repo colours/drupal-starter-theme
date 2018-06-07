@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * text-sidebar
+ *
+ * Available variables for text-sidebar:
+ *    - text_column.intro_text [String]: Introduction text that is shown lager.
+ *    - text_column.text [String]: Main text column
+ *    - text_column.call_to_action_text [String]: Call to action button text
+ *    - text_column.call_to_action_url [String]: Call to action url
+ *    - sidebar.card.title [String]: Card title
+ *    - sidebar.card.text [String/HTML]: Content of the card block
+ *    - sidebar.card.call_to_action_text [String]: Call to action button text
+ *    - sidebar.card.call_to_action_url [String]: Call to action url
+ */
+#}
+
+<section class="section module--lg-v text-sidebar">
+    <div class="container">
+        <div class="row no-gutters justify-content-between">
+            <div class="col-md-7">
+                {% include "@molecules/_text-column.twig" %}
+            </div>
+            <aside class="col-md-4 text-sidebar__aside">
+                {% set item_card = {
+                    card_title: sidebar.card.title,
+                    card_text: sidebar.card.text,
+                    button: {
+                        button_text: sidebar.card.call_to_action_text,
+                        button_link: sidebar.card.call_to_action_url
+                    }
+                } %}
+                {% include '@molecules/card/_card-blue.twig' with item_card %}
+            </aside>
+        </div>
+    </div>
+</section>

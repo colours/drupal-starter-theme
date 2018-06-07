@@ -1,0 +1,60 @@
+@import '../../../00-protons/variables';
+@import "~bootstrap/scss/nav";
+
+@include media-breakpoint-down(md) {
+    padding: 0 0 20px;
+
+    .nav--main {
+        text-align: center;
+        border-bottom: 1px solid $white;
+
+        &.nav {
+            margin-bottom: $spacer * 1.5;
+            padding-bottom: $spacer * 1.5;
+        }
+
+        .nav-link {
+            color: $white;
+            font-size: $font-size-xl;
+            line-height: 30px;
+            
+            .is-active,
+            &.active {
+                color: $white;
+                border-bottom: 2px solid $c-orange;
+            }
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+}
+@include media-breakpoint-up(lg) {
+    .nav--main {
+        font-family: $font-family-serif;
+        font-size: $font-size-lg;
+        line-height: 24px;
+        color: red;
+
+        .nav-item {
+            max-width: 140px;
+            margin-right: $spacer-md;
+
+            .is-active,
+            &.active {
+                border-left: 4px solid $c-orange;
+            }
+        }
+
+        .nav-link {
+            padding: 0 $spacer * 0.25;
+        }
+
+        span {
+            display: block;
+            font-size: $font-size-xs;
+        }
+    }
+}

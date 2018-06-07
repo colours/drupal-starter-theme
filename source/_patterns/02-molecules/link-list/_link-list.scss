@@ -1,0 +1,22 @@
+// All component Sass needs non-printing base config
+@import '../../00-protons/variables';
+
+.link-list {
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        font-size: $font-size-sm;
+        margin: $spacer 0;
+
+        @include media-breakpoint-up(lg) {
+            width: 48%;
+        }
+
+        .link {
+            color: $c-cadet;
+        }
+    }
+
+}

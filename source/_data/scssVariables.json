@@ -1,0 +1,76 @@
+{
+  "scssColors": {
+    "primary": "rgb(5, 120, 190)",
+    "secondary": "rgb(255, 255, 255)",
+    "success": "rgb(40, 167, 69)",
+    "info": "rgb(23, 162, 184)",
+    "warning": "rgb(255, 193, 7)",
+    "danger": "rgb(220, 53, 69)",
+    "light": "rgb(248, 249, 250)",
+    "dark": "rgb(52, 58, 64)",
+    "c-orange": "rgb(238, 118, 34)",
+    "c-blue": "rgb(5, 120, 190)",
+    "c-cadet": "rgb(91, 102, 112)",
+    "c-black": "rgb(0, 0, 0)",
+    "c-silver": "rgb(189, 194, 198)",
+    "c-anti-flash-white": "rgb(238, 239, 240)"
+  },
+  "scssBreakpoints": {
+    "xs": 0,
+    "sm": "576px",
+    "md": "768px",
+    "lg": "992px",
+    "xl": "1200px"
+  },
+  "scssSpacing": {
+    "s": "5px",
+    "m": "25px",
+    "l": "50px"
+  },
+  "fontFamilies": {
+    "$font-family-base": [
+      "Open Sans",
+      "sans-serif"
+    ],
+    "$font-family-monospace": [
+      "SFMono-Regular",
+      "Menlo",
+      "Monaco",
+      "Consolas",
+      "Liberation Mono",
+      "Courier New",
+      "monospace"
+    ]
+  },
+  "fontSizes": {
+    "base": "1.125rem",
+    "lg": "1.25rem",
+    "sm": "1rem"
+  },
+  "fontWeights": {
+    "light": 300,
+    "normal": 400,
+    "bold": 600
+  },
+  "scssIcons": {
+    "prefix": "icon--",
+    "fontname": "iconfont",
+    "icons": [
+      "arrow-right",
+      "check",
+      "chevron-down",
+      "chevron-left",
+      "chevron-right",
+      "chevron-up",
+      "close",
+      "download",
+      "long-arrow",
+      "menu",
+      "outside-link",
+      "person",
+      "plus",
+      "search",
+      "send"
+    ]
+  }
+}

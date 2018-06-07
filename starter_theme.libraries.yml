@@ -1,0 +1,24 @@
+# Define Particle theme's library CSS and JS assets along with dependencies
+core:
+  css:
+    theme:
+      dist/assets/app-drupal.styles.css:
+        preprocess: true
+  js:
+    dist/assets/app-drupal.js:
+      preprocess: true
+  # see all in Drupal's `core/core.libraries.yml`
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+
+# Create custom jQuery and Lodash libraries
+# that'll override the Drupal core jQuery and Underscore libraries
+# See `libraries-override` in starter_theme.info.yml
+jquery:
+  js:
+    dist/assets/drupal-jquery.js: { minified: true, weight: -20 }
+
+lodash:
+  js:
+    dist/assets/drupal-lodash.js: { minified: true, weight: -20 }

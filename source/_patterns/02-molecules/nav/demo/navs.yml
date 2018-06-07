@@ -1,0 +1,24 @@
+navbar_items:
+  - nav_item_text: Navigation item 1
+    nav_item_link_other_classes:
+    - active
+  - nav_item_text: Navigation item 2
+    nav_item_link_other_classes:
+  - nav_item_text: Navigation item 3
+    nav_item_link_other_classes:
+utility_navbar_items:
+  - nav_item_text: Nav item 1
+    nav_item_link_other_classes:
+    - active
+  - nav_item_text: Nav item 2
+    nav_item_link_other_classes:
+  - nav_item_text: Nav item 3
+    nav_item_link_other_classes:
+  - nav_item_text: Nav item 4
+    nav_item_link_other_classes:
+language_navbar_items:
+  - nav_item_text: NL
+    nav_item_link_other_classes:
+    - active
+  - nav_item_text: EN
+    nav_item_link_classes:

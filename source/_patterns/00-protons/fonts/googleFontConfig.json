@@ -1,0 +1,20 @@
+{
+    "google-fonts-plugin": {
+        "fonts": [
+            {
+                "family": "Open Sans",
+                "variants": [
+                    "400",
+                    "400i",
+                    "600",
+                    "600i",
+                    "700"
+                ],
+                "subsets": [
+                    "latin"
+                ]
+            }
+        ],
+        "outputDir": "dist/assets/fonts"
+    }
+}

@@ -1,0 +1,11 @@
+{#
+  Blue Card!  
+#}
+
+{% extends '@molecules/card/_card.twig' %}
+{# In this context we're hard-coding the only thing we need to override for a helper card. #}
+{% set button_element = 'a' %}
+{% set button_color = 'link' %}
+{% set card_border = 'none' %}
+{% set text_color = 'white' %}
+{% set card_background = 'c-blue' %}
