@@ -1,8 +1,4 @@
-# Particle: A design system integrating to Pattern Lab and a Drupal 8 theme
-
-[![GitHub (pre-)release](https://img.shields.io/github/release/phase2/particle/all.svg)](https://github.com/phase2/particle/releases) [![Build Status](https://travis-ci.org/phase2/particle.svg?branch=master)](https://travis-ci.org/phase2/particle) [![Greenkeeper badge](https://badges.greenkeeper.io/phase2/particle.svg)](https://greenkeeper.io/)
-
-![Particle mascot: Astrogoat](source/_patterns/01-atoms/image/demo/astrogoat.png?raw=true "Astrogoat")
+# Drupal Starter theme based on Particle: A design system integrating to Pattern Lab and a Drupal 8 theme
 
 Particle is an opinionated set of tools and examples to:
 
@@ -37,7 +33,7 @@ Particle builds design systems in dev mode for local hosting, or production mode
 
 ### Quickstart anywhere
 
-1. [Download the latest release](https://github.com/phase2/particle/releases)
+1. [Download the latest release](https://github.com/colours/drupal-starter-theme)
 1. Extract anywhere (i.e. this readme should be at `any/where/particle/README.md`)
 1. Within the extracted folder run:
 
