@@ -76,7 +76,7 @@ module.exports = function SassToJson(opt) {
           // Remove dupes
           .sortedUniq()
           // Modify path to be relative to pathRelativeToDir for yaml config
-          .map(folderPath => path.relative(output.pathRelativeToDir, folderPath))
+          .map(folderPath => path.relative(output.pathRelativeToDir, folderPath).split(path.sep).join('/'))
           // Break out of lodash object
           .value();
 
@@ -102,7 +102,9 @@ module.exports = function SassToJson(opt) {
       _.set(configFile, output.atKey, namespaces);
 
       // Make a new file using a clone of one we have lying around.
-      const outputFile = latestFile.clone({ contents: false });
+            const outputFile = latestFile.clone({
+                contents: false
+            });
       // Base appears to be removed when gulp.dest() runs. SO ADD IT.
       outputFile.path = path.join(latestFile.base, output.configFile);
 
