@@ -43,6 +43,9 @@ npm run setup
 npm start
 ```
 
-Simply wait until the webpack bundle output appears then visit [http://0.0.0.0:8080/pl](http://0.0.0.0:8080/pl) (or [http://localhost:8080/pl](http://localhost:8080/pl)) and start working.
+Simply wait until the webpack bundle output appears then visit [http://0.0.0.0:8888/pl](http://0.0.0.0:8888/pl) (or [http://localhost:8888/pl](http://localhost:8888/pl)) and start working.
 
 That's it. For **much** greater detail on the frontend approach using this project, check out the [Phase2 Frontend Docs](https://phase2.github.io/frontend-docs/).
+
+**NOTE FOR WINDOWS USERS**
+To set the right enviroment variables install this package: [https://github.com/laggingreflex/win-node-env](https://github.com/laggingreflex/win-node-env)
