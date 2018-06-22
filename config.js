@@ -3,7 +3,7 @@
  */
 module.exports = {
     PATH_PL: './apps/pl',
-    PATH_DRUPAL: './',
+    PATH_DRUPAL: './apps/drupal',
     PATH_SOURCE: './source',
     PATH_DIST: './dist',
 };
