@@ -18,8 +18,9 @@ const pl = require('./webpack.pl.shared');
 // Webpack Entry Points
 const dev = {
     devServer: {
-        host: 'localhost',
-        port: '8888',
+        host: '0.0.0.0',
+        port: '1981',
+        disableHostCheck: true,
         contentBase: path.resolve('dist/'), // dev server starts from this
                                             // folder.
         watchContentBase: true, // Refresh devServer when dist/ changes
