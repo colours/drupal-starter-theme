@@ -49,3 +49,21 @@ That's it. For **much** greater detail on the frontend approach using this proje
 
 **NOTE FOR WINDOWS USERS**
 To set the right environment variables install this package: [https://github.com/laggingreflex/win-node-env](https://github.com/laggingreflex/win-node-env)
+
+
+
+#### To get up and running follow these steps:
+
+1. Download the repo: https://github.com/colours/drupal-starter-theme
+2. Replace starter_theme by the new_theme_name in all files.
+3. Replace starterTheme by the newThemeName in all files.
+4. Rename the following file names
+    1. starter_theme.info.yml
+    2. webpack.starter_theme.dev.js
+    3. webpack.starter_theme.prod.js
+    4. starter_theme.theme
+    5. starter_theme.libraries.yml
+
+After the step you can follow the [quick start](https://phase2.github.io/frontend-docs/getting-started/quickstart/) steps.
+
+In the future we will add a Yeoman script to automate these step.
