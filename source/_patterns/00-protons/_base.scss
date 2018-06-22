@@ -18,10 +18,6 @@
 @import '~bootstrap/scss/utilities';
 @import '~bootstrap/scss/code';
 
-// Font Awesome icons
-$fa-font-path: '~font-awesome/fonts/';
-@import '~font-awesome/scss/font-awesome';
-
 // Custom CSS-generating output
 $font-path: 'fonts/';
 @import 'printing/fonts';
