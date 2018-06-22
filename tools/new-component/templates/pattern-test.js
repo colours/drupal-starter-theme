@@ -1,5 +1,7 @@
-import { name } from '../';
+import {
+    name
+} from '../';
 
 test('<%= name %> component is registered', () => {
-  expect(name).toBe('<%= name %>');
+    expect(name).toBe('<%= name %>');
 });
