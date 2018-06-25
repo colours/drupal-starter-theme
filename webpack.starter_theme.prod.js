@@ -23,7 +23,6 @@ const prod = {
     mode: 'production',
     output: {
         path: path.resolve(__dirname, 'dist/assets/'),
-        publicPath: '/themes/custom/starter_theme/dist/assets/',
     },
     // See webpack.[app].prod.js for entry points
     module: {
@@ -33,6 +32,7 @@ const prod = {
                 test: /\.(sass|scss)$/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
+                    publicPath: './',
                     use: [
                         {
                             loader: 'css-loader',
