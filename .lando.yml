@@ -1,0 +1,25 @@
+name: test-patternlab
+
+proxy:
+  nodeserver:
+    - pl.test.lndo.site:1981
+
+services:
+  nodeserver:
+    type: node:latest
+    overrides:
+      services:
+        image: weareyou/node-php-composer
+        ports:
+          - "1981:1981"
+    run_as_root:
+      - "npm install -g gulp webpack node-sass webpack-dev-server"
+    run:
+      - "cd $LANDO_MOUNT && npm start"
+tooling:
+  npm:
+    service: nodeserver
+
+events:
+  post-start:
+    - nodeserver: cd $LANDO_MOUNT && npm install && npm run setup
