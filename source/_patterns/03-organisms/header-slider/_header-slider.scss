@@ -2,33 +2,33 @@
 @import '../../00-protons/variables';
 
 .header-slider {
-    padding-top: 0;
-    .container {
-        position: relative;
-    }
+  padding-top: 0;
 
-    @include media-breakpoint-up(lg) {
-        .card {
-            position: absolute;
-            left: 15px;
-            bottom: -45px;
-            max-width: 480px;
+  .container {
+    position: relative;
+  }
 
-            .card-title {
-                font-size: $h1-font-size;
-            }
-            
-            .card-title::after {
-                content: '';
-                display: block;
-                width: 80px;
-                height: 4px;
-                margin-top: $spacer-lg;
-                margin-bottom: $spacer;
-                background-color: $c-blue;            
-            }
-        }
+  @include media-breakpoint-up(lg) {
+    .card {
+      position: absolute;
+      left: 15px;
+      bottom: -45px;
+      max-width: 480px;
+
+      .card-title {
+        font-size: $h1-font-size;
+      }
+
+      .card-title::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        margin-top: $spacer-lg;
+        margin-bottom: $spacer;
+        background-color: $c-blue;
+      }
     }
+  }
 
 }
-

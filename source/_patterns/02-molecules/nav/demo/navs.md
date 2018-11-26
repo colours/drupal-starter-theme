@@ -1,7 +1,7 @@
 ## Nav Variables
 
 | Name                   | Type    | Options     | Description                                               |
-|------------------------|---------|-------------|-----------------------------------------------------------|
+| ---------------------- | ------- | ----------- | --------------------------------------------------------- |
 | nav_element            | String  | any         | Choose the html element of the nav.                       |
 | nav_id                 | String  | any         | Choose the html id of the nav.                            |
 | nav_role               | String  | any         | Choose the html role of the nav.                          |
@@ -16,11 +16,10 @@
 | nav_items              | Array   | any         | A list of items to be in the nav.                         |
 | item.nav_item_dropdown | Boolean | true, false | Set the selected nav.item as a dropdown menu.             |
 
-
 ## Nav_item Variables
 
 | Name                  | Type    | Options     | Description                                                |
-|-----------------------|---------|-------------|------------------------------------------------------------|
+| --------------------- | ------- | ----------- | ---------------------------------------------------------- |
 | nav_item_link         | String  | any         | The URL the nav item will lead to.                         |
 | nav_item_element      | String  | any         | The nav-item's html element.                               |
 | nav_item_js           | Boolean | true, false | Choose whether to use bootstrap's built-in nav javascript. |

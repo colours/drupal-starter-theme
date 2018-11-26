@@ -1,5 +1,5 @@
-import {name} from '../';
+import { name } from '../';
 
 test('carousel component is registered', () => {
-    expect(name).toBe('carousel');
+  expect(name).toBe('carousel');
 });

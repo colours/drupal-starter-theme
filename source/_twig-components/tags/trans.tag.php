@@ -8,12 +8,14 @@
 // these files are loaded three times and we can't re-set a class
 if (!class_exists("Project_trans_Node")) {
 
-  class Project_trans_Node extends Twig_Node {
+  class Project_trans_Node extends Twig_Node
+  {
 
     /**
      * {@inheritdoc}
      */
-    public function __construct(\Twig_Node $body, \Twig_Node $plural = NULL, \Twig_Node_Expression $count = NULL, \Twig_Node_Expression $options = NULL, $lineno, $tag = NULL) {
+    public function __construct(\Twig_Node $body, \Twig_Node $plural = null, \Twig_Node_Expression $count = null, \Twig_Node_Expression $options = null, $lineno, $tag = null)
+    {
       parent::__construct([
         'count' => $count,
         'body' => $body,
@@ -25,7 +27,8 @@ if (!class_exists("Project_trans_Node")) {
     /**
      * {@inheritdoc}
      */
-    public function compile(\Twig_Compiler $compiler) {
+    public function compile(\Twig_Compiler $compiler)
+    {
       $compiler->addDebugInfo($this);
 
       $options = $this->getNode('options');
@@ -54,7 +57,8 @@ if (!class_exists("Project_trans_Node")) {
      *   - array $tokens
      *       The extracted tokens as new \Twig_Node_Expression_Name instances.
      */
-    protected function compileString(\Twig_Node $body) {
+    protected function compileString(\Twig_Node $body)
+    {
       if ($body instanceof \Twig_Node_Expression_Name || $body instanceof \Twig_Node_Expression_Constant || $body instanceof \Twig_Node_Expression_TempName) {
         return [$body, []];
       }
@@ -105,16 +109,14 @@ if (!class_exists("Project_trans_Node")) {
                 $args = $args->getNode('node');
                 if ($args instanceof \Twig_Node_Expression_Name) {
                   $argName[] = $args->getAttribute('name');
-                }
-                else {
+                } else {
                   $argName[] = $args->getNode('attribute')
                     ->getAttribute('value');
                 }
               }
               $argName = array_reverse($argName);
               $argName = implode('.', $argName);
-            }
-            else {
+            } else {
               $argName = $n->getAttribute('name');
               if (!is_null($args)) {
                 $argName = $args->getAttribute('name');
@@ -125,13 +127,11 @@ if (!class_exists("Project_trans_Node")) {
             $text .= $placeholder;
             $expr->setAttribute('placeholder', $placeholder);
             $tokens[] = $expr;
-          }
-          else {
+          } else {
             $text .= $node->getAttribute('data');
           }
         }
-      }
-      else {
+      } else {
         $text = $body->getAttribute('data');
       }
 
@@ -148,18 +148,20 @@ if (!class_exists("Project_trans_Node")) {
 // these files are loaded three times and we can't re-set a class
 if (!class_exists("Project_trans_TokenParser")) {
 
-  class Project_trans_TokenParser extends Twig_TokenParser {
+  class Project_trans_TokenParser extends Twig_TokenParser
+  {
 
     /**
      * {@inheritdoc}
      */
-    public function parse(Twig_Token $token) {
+    public function parse(Twig_Token $token)
+    {
       $lineno = $token->getLine();
       $stream = $this->parser->getStream();
-      $body = NULL;
-      $options = NULL;
-      $count = NULL;
-      $plural = NULL;
+      $body = null;
+      $options = null;
+      $count = null;
+      $plural = null;
 
       if (!$stream->test(\Twig_Token::BLOCK_END_TYPE) && $stream->test(\Twig_Token::STRING_TYPE)) {
         $body = $this->parser->getExpressionParser()->parseExpression();
@@ -174,7 +176,7 @@ if (!class_exists("Project_trans_TokenParser")) {
         if ('plural' === $stream->next()->getValue()) {
           $count = $this->parser->getExpressionParser()->parseExpression();
           $stream->expect(\Twig_Token::BLOCK_END_TYPE);
-          $plural = $this->parser->subparse([$this, 'decideForEnd'], TRUE);
+          $plural = $this->parser->subparse([$this, 'decideForEnd'], true);
         }
       }
 
@@ -190,21 +192,24 @@ if (!class_exists("Project_trans_TokenParser")) {
     /**
      * Detect a 'plural' switch or the end of a 'trans' tag.
      */
-    public function decideForFork($token) {
+    public function decideForFork($token)
+    {
       return $token->test(['plural', 'endtrans']);
     }
 
     /**
      * Detect the end of a 'trans' tag.
      */
-    public function decideForEnd($token) {
+    public function decideForEnd($token)
+    {
       return $token->test('endtrans');
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getTag() {
+    public function getTag()
+    {
       return 'trans';
     }
 
@@ -218,17 +223,13 @@ if (!class_exists("Project_trans_TokenParser")) {
      *
      * @throws \Twig_Error_Syntax
      */
-    protected function checkTransString(\Twig_Node $body, $lineno) {
+    protected function checkTransString(\Twig_Node $body, $lineno)
+    {
       foreach ($body as $node) {
-        if (
-          $node instanceof \Twig_Node_Text
-          ||
-          ($node instanceof \Twig_Node_Print && $node->getNode('expr') instanceof \Twig_Node_Expression_Name)
-          ||
-          ($node instanceof \Twig_Node_Print && $node->getNode('expr') instanceof \Twig_Node_Expression_GetAttr)
-          ||
-          ($node instanceof \Twig_Node_Print && $node->getNode('expr') instanceof \Twig_Node_Expression_Filter)
-        ) {
+        if ($node instanceof \Twig_Node_Text
+          || ($node instanceof \Twig_Node_Print && $node->getNode('expr') instanceof \Twig_Node_Expression_Name)
+          || ($node instanceof \Twig_Node_Print && $node->getNode('expr') instanceof \Twig_Node_Expression_GetAttr)
+          || ($node instanceof \Twig_Node_Print && $node->getNode('expr') instanceof \Twig_Node_Expression_Filter)) {
           continue;
         }
         throw new \Twig_Error_Syntax(sprintf('The text to be translated with "trans" can only contain references to simple variables'), $lineno);

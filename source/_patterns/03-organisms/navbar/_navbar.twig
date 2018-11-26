@@ -9,16 +9,14 @@
   navbar_id: String: The html id for the navbar.
 #}
 
-{% set navbar_classes = navbar_other_classes|default([])|merge([
-'navbar',
-]) | sort | join(' ') | trim %}
+{% set navbar_classes = navbar_other_classes | default([]) | merge(['navbar']) | sort | join(' ') | trim %}
 <nav role="navigation" aria-labelledby="{{ navbar_arialebelledby }}" {{ navbar_attributes }} class="{{ navbar_classes }}">
     {% block navbar_brand %}
         <a href="{{ url }}" title="{{ site_name }}" rel="home" class="navbar__logo">
             {% include "@atoms/_image.twig" with {
-                img: {
+                img : {
                     src: paths.assets ~ '/logo.svg',
-                    alt: site_name ~ ' logo',
+                    alt: site_name ~ ' logo'
                 }
             } %}
         </a>
@@ -45,14 +43,14 @@
                 nav_items_language: language_navbar_items,
             } %}
             {#<form class="form-inline my-2 my-lg-0">#}
-                {#<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
-                {#{% include '@atoms/button/_button.twig' with {#}
-                {#button_color: 'primary',#}
-                {#button_outline: true,#}
-                {#button_other_classes: 'my-2 my-sm-0',#}
-                {#button_type: 'submit',#}
-                {#button_text: 'Search'#}
-                {#} %}#}
+            {#<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">#}
+            {#{% include '@atoms/button/_button.twig' with {#}
+            {#button_color: 'primary',#}
+            {#button_outline: true,#}
+            {#button_other_classes: 'my-2 my-sm-0',#}
+            {#button_type: 'submit',#}
+            {#button_text: 'Search'#}
+            {#} %}#}
             {#</form>#}
         </div>
     {% endblock navbar_content %}

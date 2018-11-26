@@ -19,12 +19,12 @@
         }%}
 
         {% if header_slider.card %}
-        {% include '@molecules/_card.twig' with {
-            card_title: header_slider.card.title,
-            card_text: header_slider.card.text,
-            card_border: 'none',
-            card_title_element: 'h1',
-        } %}
+            {% include '@molecules/_card.twig' with {
+                card_title : header_slider.card.title,
+                card_text: header_slider.card.text,
+                card_border: 'none',
+                card_title_element: 'h1'
+            } %}
         {% endif %}
     </div>
 </section>

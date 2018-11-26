@@ -11,8 +11,8 @@ import imageInlineTwig from './image-inline.twig';
 import imageStylesTwig from './image-styles.twig';
 
 export default {
-    imageImgMarkdown,
-    imageImgTwig,
-    imageInlineTwig,
-    imageStylesTwig,
+  imageImgMarkdown,
+  imageImgTwig,
+  imageInlineTwig,
+  imageStylesTwig,
 };

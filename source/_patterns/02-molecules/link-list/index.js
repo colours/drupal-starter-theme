@@ -14,10 +14,8 @@ import './_link-list.scss';
 
 export const name = 'link-list';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

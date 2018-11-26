@@ -15,10 +15,8 @@ import './_action-button.twig';
 
 export const name = 'actionButton';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

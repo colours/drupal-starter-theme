@@ -13,7 +13,7 @@ import yaml from './action-buttons.yml';
 import markdown from './action-buttons.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

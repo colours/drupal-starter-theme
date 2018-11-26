@@ -8,29 +8,37 @@
 
 html,
 body {
-    -webkit-touch-callout: none;
-    -webkit-font-smoothing: antialiased;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Custom type rules here
-h1, .h1,
-h2, .h2 {
-    font-family: $headings-font-family;
-    color: $c-blue;
+h1,
+.h1,
+h2,
+.h2 {
+  font-family: $headings-font-family;
+  color: $c-blue;
 }
 
-h3, h4, h5, h6,
-.h3, .h4, .h5, .h6 {
-    font-family: $headings-font-secondary;
+h3,
+h4,
+h5,
+h6,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $headings-font-secondary;
 }
 
 .text--intro {
-    font-family: $font-family-serif;
-    font-size: $font-size-xxl;
-    color: #00416B;
-    line-height: $line-height-base / 1.152;
+  font-family: $font-family-serif;
+  font-size: $font-size-xxl;
+  color: #00416B;
+  line-height: $line-height-base / 1.152;
 }
 
 .text--wrap-always {
-    word-spacing: 100vw;
+  word-spacing: 100vw;
 }

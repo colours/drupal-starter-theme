@@ -1,5 +1,5 @@
-import {name} from '../';
+import { name } from '../';
 
 test('accordion component is registered', () => {
-    expect(name).toBe('accordion');
+  expect(name).toBe('accordion');
 });

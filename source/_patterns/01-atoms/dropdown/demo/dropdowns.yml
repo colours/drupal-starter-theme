@@ -1,4 +1,4 @@
-dropdowns_helper: 'Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.'
+dropdowns_helper: "Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin."
 
 dropdown_menu_items:
   - dropdown_menu_item_text: Action
@@ -7,6 +7,6 @@ dropdown_menu_items:
 
 dropdown_menu_disabled:
   - dropdown_menu_item_text: This item is disabled
-    dropdown_menu_item_disabled: 'disabled'
+    dropdown_menu_item_disabled: "disabled"
   - dropdown_menu_item_text: Action
   - dropdown_menu_item_text: Another Action

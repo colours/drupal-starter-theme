@@ -13,10 +13,8 @@ import './_basic-page.twig';
 
 export const name = 'basicPage';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

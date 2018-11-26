@@ -13,7 +13,7 @@ import yaml from './text-sidebars.yml';
 import markdown from './text-sidebars.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

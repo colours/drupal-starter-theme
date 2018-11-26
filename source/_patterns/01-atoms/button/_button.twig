@@ -21,7 +21,7 @@
   See https://getbootstrap.com/docs/4.0/components/buttons/ for more details
 #}
 
-{% set button_element = button_element | default ('button') %}
+{% set button_element = button_element | default('button') %}
 
 {% if button_element != 'a' %}
     {% set button_type = 'type=' ~ button_type | default('button') %}
@@ -47,6 +47,8 @@ button_disabled ? 'disabled',
 button_other_attributes|raw,
 ] | sort | join(' ') | trim %}
 <{{ button_element }} {{ button_type }} class="{{ button_classes }}" {{ button_attributes }}>
-{% if button_text_raw %}{{ button_text|raw }}{% else %}{{ button_text }}{% endif %}
-  {% block right %}{% endblock right %}
+    {% if button_text_raw %}{{ button_text|raw }}
+    {% else %}{{ button_text }}
+    {% endif %}
+    {% block right %}{% endblock right %}
 </{{ button_element }}>

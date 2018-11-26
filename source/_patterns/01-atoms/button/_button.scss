@@ -1,6 +1,6 @@
 @import '../../00-protons/variables';
 
-// To change default bootstrap card variables, 
+// To change default bootstrap card variables,
 // copy from ~bootstrap/scss/variables to here
 @import "~bootstrap/scss/buttons";
 
@@ -9,64 +9,64 @@ $button-icon-space-right: $spacer-xl;
 
 // Add custom code here
 .btn.icon--before {
-    position: relative;
-    padding-left: $button-icon-space-left;
+  position: relative;
+  padding-left: $button-icon-space-left;
 
-    &::before {
-        @include center(false, true, true);
-        left: $spacer;
-    }
+  &::before {
+    @include center(false, true, true);
+    left: $spacer;
+  }
 }
 
 .btn.icon--after {
-    position: relative;
-    padding-right: $button-icon-space-right;
+  position: relative;
+  padding-right: $button-icon-space-right;
 
-    &::before {
-        @include center(false, true, true);
-        right: $spacer;
-    }
+  &::before {
+    @include center(false, true, true);
+    right: $spacer;
+  }
 }
 
 .btn {
-    padding: $spacer * 0.8 $spacer;
-    font-size: $font-size-xs;
-    text-transform: uppercase;
-    font-weight: $font-weight-bold;
+  padding: $spacer * 0.8 $spacer;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
 }
 
 .btn-primary {
-    border-color: $c-blue;
-    color: white;
+  border-color: $c-blue;
+  color: white;
 
-    &:hover {
-        border-color: white;
-        background-color: $c-blue;
-    }
+  &:hover {
+    border-color: white;
+    background-color: $c-blue;
+  }
 }
 
 .btn-secondary {
+  border-color: $c-blue;
+  color: $c-blue;
+
+  &:hover {
     border-color: $c-blue;
     color: $c-blue;
-
-    &:hover {
-        border-color: $c-blue;
-        color: $c-blue;
-        background-color: #ececec;
-    }
+    background-color: #ececec;
+  }
 }
 
 .btn-link {
-    padding: 0;
+  padding: 0;
 }
 
 .bg-c-blue {
-    .btn-link {
-        color: white;
-        text-decoration: underline;
+  .btn-link {
+    color: white;
+    text-decoration: underline;
 
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+      text-decoration: none;
     }
+  }
 }

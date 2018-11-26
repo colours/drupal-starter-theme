@@ -20,15 +20,15 @@ row_classes,
 <div class="row">
     {% for item_card in card_grid_rows %}
         {% set item_card = {
-        card_border: 'none',
-        card_title: item_card.card_title,
-        card_text: item_card.card_text,
-        button: {
-        button_element: 'a',
-        button_color: 'secondary',
-        button_text: 'View details »'|t,
-        button_link: '#',
-        }
+            card_border: 'none',
+            card_title: item_card.card_title,
+            card_text: item_card.card_text,
+            button: {
+                button_element: 'a',
+                button_color: 'secondary',
+                button_text: 'View details »' | t,
+                button_link: '#'
+            }
         } %}
         <div class="{{ card_grid_classes }}">
             {% include '@molecules/card/_card.twig' with item_card %}

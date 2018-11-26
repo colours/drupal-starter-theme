@@ -1,5 +1,5 @@
-import {name} from '../';
+import { name } from '../';
 
 test('nav component is registered', () => {
-    expect(name).toBe('nav');
+  expect(name).toBe('nav');
 });

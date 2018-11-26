@@ -14,10 +14,8 @@ import './_pagination.scss';
 
 export const name = 'pagination';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

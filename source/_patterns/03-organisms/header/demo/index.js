@@ -14,7 +14,7 @@ import yaml from './headers.yml';
 import markdown from './headers.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

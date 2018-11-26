@@ -86,10 +86,6 @@ card_other_classes,
         </div>
     {% endblock %}
 
-    {% if list %}
-        {% include '@atoms/list-group/_list-group.twig' with list %}
-    {% endif %}
-
     {% if card_footer %}
         <div class="card-footer">
             {{ card_footer }}

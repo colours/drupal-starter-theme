@@ -14,7 +14,7 @@ import yaml from './footers.yml';
 import markdown from './footers.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

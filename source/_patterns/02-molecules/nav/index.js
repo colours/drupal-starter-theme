@@ -15,10 +15,8 @@ import './scss/_nav-utility.scss';
 
 export const name = 'nav';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

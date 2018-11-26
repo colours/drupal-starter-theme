@@ -13,7 +13,7 @@ import yaml from './tab-contents.yml';
 import markdown from './tab-contents.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

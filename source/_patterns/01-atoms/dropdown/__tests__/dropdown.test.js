@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import dropdown, {name} from '../';
+import dropdown, { name } from '../';
 
 const dropHTML = `
   <div class="dropdown">
@@ -13,27 +13,27 @@ const dropHTML = `
 `;
 
 test('dropdown component is registered', () => {
-    expect(name).toBe('dropdown');
+  expect(name).toBe('dropdown');
 });
 
 test('dropdown menu starts out hidden', () => {
-    document.body.innerHTML = dropHTML;
-    dropdown(document);
+  document.body.innerHTML = dropHTML;
+  dropdown(document);
 
-    // `show` class should NOT start out on dropdowns
-    expect($('.dropdown, .dropdown-menu').hasClass('show')).not.toBe(true);
-    // attributes are strings, not booleans
-    expect($('.dropdown-toggle').attr('aria-expanded')).toBe('false');
+  // `show` class should NOT start out on dropdowns
+  expect($('.dropdown, .dropdown-menu').hasClass('show')).not.toBe(true);
+  // attributes are strings, not booleans
+  expect($('.dropdown-toggle').attr('aria-expanded')).toBe('false');
 });
 
 test('dropdown menu shows after clicking button', () => {
-    document.body.innerHTML = dropHTML;
-    dropdown(document);
+  document.body.innerHTML = dropHTML;
+  dropdown(document);
 
-    $('#dropdownMenuButton').click();
+  $('#dropdownMenuButton').click();
 
-    // `show` class should now be on dropdowns
-    expect($('.dropdown, .dropdown-menu').hasClass('show')).toBe(true);
-    // attributes are strings, not booleans
-    expect($('.dropdown-toggle').attr('aria-expanded')).toBe('true');
+  // `show` class should now be on dropdowns
+  expect($('.dropdown, .dropdown-menu').hasClass('show')).toBe(true);
+  // attributes are strings, not booleans
+  expect($('.dropdown-toggle').attr('aria-expanded')).toBe('true');
 });

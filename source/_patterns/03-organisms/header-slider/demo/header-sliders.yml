@@ -2,5 +2,5 @@ header_slider:
   picture:
     img_element: '<img src="http://via.placeholder.com/1148x400" />'
   card:
-    title: 'Logistiek management'
-    text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum pellentesque, curabitur bibendum scelerisque placerat montes et integer vestibulum class, mus porta suspendisse mollis a posuere interdum sem. Himenaeos curae cubilia et odio felis duis blandit senectus risus magna, amet sed scelerisque a leo inceptos ad habitasse at vulputate, faucibus lobortis egestas volutpat nullam tincidunt taciti penatibus nascetur. Ultrices placerat iaculis lacinia auctor sem ridiculus elementum, sodales eu lobortis lorem vulputate facilisi quam at, scelerisque egestas tellus enim netus aliquet.'
+    title: "Logistiek management"
+    text: "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum pellentesque, curabitur bibendum scelerisque placerat montes et integer vestibulum class, mus porta suspendisse mollis a posuere interdum sem. Himenaeos curae cubilia et odio felis duis blandit senectus risus magna, amet sed scelerisque a leo inceptos ad habitasse at vulputate, faucibus lobortis egestas volutpat nullam tincidunt taciti penatibus nascetur. Ultrices placerat iaculis lacinia auctor sem ridiculus elementum, sodales eu lobortis lorem vulputate facilisi quam at, scelerisque egestas tellus enim netus aliquet."

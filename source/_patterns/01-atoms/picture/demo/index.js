@@ -13,7 +13,7 @@ import yaml from './pictures.yml';
 import markdown from './pictures.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

@@ -19,8 +19,6 @@
 @import '~bootstrap/scss/code';
 
 // Custom CSS-generating output
-$font-path: 'fonts/';
-@import 'printing/fonts';
 @import 'printing/type';
 @import 'printing/links';
 @import 'printing/module';

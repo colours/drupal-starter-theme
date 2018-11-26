@@ -16,10 +16,8 @@ import './_navbar.scss';
 
 export const name = 'navbar';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

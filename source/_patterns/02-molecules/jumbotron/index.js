@@ -15,10 +15,8 @@ import './_jumbotron.scss';
 
 export const name = 'jumbotron';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

@@ -2,19 +2,18 @@
 @import '../../00-protons/variables';
 
 .action-button {
+  .module {
+    position: relative;
+  }
 
-    .module {
-        position: relative;
-    }
+  .btn-primary {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    transform: translateY(-50%);
+  }
 
-    .btn-primary {
-        position: absolute;
-        top: 0;
-        right: 50px;
-        transform: translateY(-50%);
-    }
-
-    .link-list {
-        margin: $spacer 25% $spacer 0;
-    }
+  .link-list {
+    margin: $spacer 25% $spacer 0;
+  }
 }

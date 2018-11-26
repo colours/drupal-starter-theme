@@ -16,10 +16,8 @@ import './_alert.scss';
 
 export const name = 'alert';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

@@ -2,15 +2,15 @@
 @import '../../00-protons/variables';
 
 .text-column__intro {
-    margin-bottom: $spacer-xl;
+  margin-bottom: $spacer-xl;
 }
 
 .text-column__main {
-    h3 {
-        font-size: $h4-font-size;
-    }
+  h3 {
+    font-size: $h4-font-size;
+  }
 
-    .btn {
-        margin-top: $spacer-lg;
-    }
+  .btn {
+    margin-top: $spacer-lg;
+  }
 }

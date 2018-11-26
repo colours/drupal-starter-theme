@@ -18,12 +18,13 @@ import './homepage.twig';
 
 export const name = 'demoPages';
 
-export function disable() {
-}
+export function disable() {}
 
 export function enable(context = $(document), settings) {
-    $('.homepage__header', context).css('color', settings.color);
-    $('.homepage__text', context).html('the header color should be overwritten by settings in pl/index.js. this text was overwritten from js in 05-pages/demo/index.js.');
+  $('.homepage__header', context).css('color', settings.color);
+  $('.homepage__text', context).html(
+    'the header color should be overwritten by settings in pl/index.js. this text was overwritten from js in 05-pages/demo/index.js.',
+  );
 }
 
 export default enable;

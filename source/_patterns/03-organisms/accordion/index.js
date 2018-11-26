@@ -17,10 +17,8 @@ import './_accordion.scss';
 
 export const name = 'accordion';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

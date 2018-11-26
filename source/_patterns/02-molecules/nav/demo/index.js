@@ -3,7 +3,7 @@ import markdown from './navs.md';
 import yaml from './navs.yml';
 
 export default {
-    twig,
-    markdown,
-    yaml,
+  twig,
+  markdown,
+  yaml,
 };

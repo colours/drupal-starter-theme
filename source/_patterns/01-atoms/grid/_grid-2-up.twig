@@ -6,7 +6,8 @@
 {% set container_class = container ? 'container' : (container_fluid ? 'container-fluid') %}
 
 {% if container or container_fluid %}
-<div class="{{ container_class }}">{% endif %}
+    <div class="{{ container_class }}">
+    {% endif %}
     <div class="row">
         <div class="col-sm-6">
             {% block column_1 %}
@@ -19,4 +20,6 @@
             {% endblock column_2 %}
         </div>
     </div>
-    {% if container or container_fluid %}</div>{% endif %}
+    {% if container or container_fluid %}
+    </div>
+{% endif %}

@@ -15,10 +15,8 @@ import './_training-detail.twig';
 
 export const name = 'trainingDetail';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

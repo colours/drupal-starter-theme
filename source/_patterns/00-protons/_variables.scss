@@ -29,10 +29,9 @@ $spacer-xl: $spacer * 4; // 80
 $spacer-xxl: $spacer * 6; // 120
 
 // (Other non-printing .scss), ie font families, spacing, etc
-$spacing: (
-    s: 5px,
-    m: 25px,
-    l: 50px,
+$spacing: (s: 5px,
+m: 25px,
+l: 50px,
 );
 
 // This is a good place to globally override bootstrap variables that aren't
@@ -51,58 +50,54 @@ $spacing: (
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
-$grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
-);
+$grid-breakpoints: (xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px);
 
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-$container-max-widths: (
-    xl: 1180px
-);
+$container-max-widths: (xl: 1180px);
 
 // global options
-$enable-rounded:                false;
+$enable-rounded: false;
 
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-base:            'Open Sans', sans-serif;
-$font-family-sans-serif:      $font-family-base;
-$font-family-serif:           'ffscalaweb', serif;
-$headings-font-family:        $font-family-serif;
+$font-family-base: 'Open Sans', sans-serif;
+$font-family-sans-serif: $font-family-base;
+$font-family-serif: 'ffscalaweb', serif;
+$headings-font-family: $font-family-serif;
 
-$headings-font-secondary:     $font-family-base;
+$headings-font-secondary: $font-family-base;
 
-$font-size-base:              1.125rem; // Assumes the browser default, typically `16px` so 18px
-$font-size-xxl:               1.75rem; // 28
-$font-size-xl:                1.5625rem; // 25
-$font-size-lg:                1.25rem; // 20
-$font-size-sm:                1rem; // 16
-$font-size-xs:                0.875rem; // 14
-$font-size-xxs:               0.75rem; // 12
+$font-size-base: 1.125rem; // Assumes the browser default, typically `16px` so 18px
+$font-size-xxl: 1.75rem; // 28
+$font-size-xl: 1.5625rem; // 25
+$font-size-lg: 1.25rem; // 20
+$font-size-sm: 1rem; // 16
+$font-size-xs: 0.875rem; // 14
+$font-size-xxs: 0.75rem; // 12
 
-$font-weight-light:           300;
-$font-weight-normal:          400;
-$font-weight-bold:            600;
-$font-weight-extra-bold:      700;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-extra-bold: 700;
 
-$font-weight-base:            $font-weight-normal;
-$line-height-base:            1.6875;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.6875;
 
-$h1-font-size:                $font-size-base * 2.889; // 52
-$h2-font-size:                $font-size-base * 2.334; // 32
-$h3-font-size:                $font-size-base * 1.667; // 30
-$h4-font-size:                $font-size-base * 1.334; // 24
-$h5-font-size:                $font-size-base * 1.112; // 20
-$h6-font-size:                $font-size-base; // 18
+$h1-font-size: $font-size-base * 2.889; // 52
+$h2-font-size: $font-size-base * 2.334; // 32
+$h3-font-size: $font-size-base * 1.667; // 30
+$h4-font-size: $font-size-base * 1.334; // 24
+$h5-font-size: $font-size-base * 1.112; // 20
+$h6-font-size: $font-size-base; // 18
 
 // Colors
 
@@ -110,7 +105,7 @@ $body-color: $c-cadet;
 $link-color: theme-color('primary') !default;
 
 // Navbar
-$navbar-light-color:                $link-color;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         $link-color;
-$navbar-light-disabled-color:       rgba($black, .3) !default;
+$navbar-light-color: $link-color;
+$navbar-light-hover-color: rgba($black, .7) !default;
+$navbar-light-active-color: $link-color;
+$navbar-light-disabled-color: rgba($black, .3) !default;

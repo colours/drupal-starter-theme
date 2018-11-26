@@ -6,8 +6,7 @@ $function = new Twig_SimpleFunction(
     if (isset($attributes) && isset($attributes['class'])) {
       $classes = join(' ', $attributes['class']);
       return '<a href="' . $url . '" class="' . $classes . '">' . $title . '</a>';
-    }
-    else {
+    } else {
       return '<a href="' . $url . '">' . $title . '</a>';
     }
   },

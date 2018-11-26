@@ -13,7 +13,7 @@ import yaml from './header-sliders.yml';
 import markdown from './header-sliders.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

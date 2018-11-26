@@ -1,10 +1,10 @@
 {% extends '@templates/site-container.twig' %}
-  {% block content %}
+{% block content %}
 
-      {% embed '@templates/_basic-page.twig' %}
-          {% block content %}
-              {% include '@organisms/_article.twig' %}
-          {% endblock %}
-      {% endembed %}
+    {% embed '@templates/_basic-page.twig' %}
+        {% block content %}
+            {% include '@organisms/_article.twig' %}
+        {% endblock %}
+    {% endembed %}
 
-  {% endblock %}
+{% endblock %}

@@ -38,8 +38,14 @@
 
 {% if nav_item_element == 'li' %}
     <li class="{{ nav_item_classes }}">
-        <a class="{{ nav_item_link_classes }}" href="{{ nav_item_link }}" {{ js_attributes }} {{ nav_item_aria }}>{{ nav_item_text }}{% if nav_item_sub_text %}<span>{{ nav_item_sub_text }}</span>{% endif %}</a>
+        <a class="{{ nav_item_link_classes }}" href="{{ nav_item_link }}" {{ js_attributes }} {{ nav_item_aria }}>{{ nav_item_text }}
+            {% if nav_item_sub_text %}
+                <span>{{ nav_item_sub_text }}</span>{% endif %}
+        </a>
     </li>
 {% elseif nav_item_element == 'a' %}
-    <a class="{{ nav_item_link_classes }}" href="{{ nav_item_link }}">{{ nav_item_text }}{% if nav_item_sub_text %}<span>{{ nav_item_sub_text }}</span>{% endif %}</a>
+    <a class="{{ nav_item_link_classes }}" href="{{ nav_item_link }}">{{ nav_item_text }}
+        {% if nav_item_sub_text %}
+            <span>{{ nav_item_sub_text }}</span>{% endif %}
+    </a>
 {% endif %}

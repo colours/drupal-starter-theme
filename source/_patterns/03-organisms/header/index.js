@@ -13,10 +13,8 @@ import './_header.twig';
 
 export const name = 'header';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

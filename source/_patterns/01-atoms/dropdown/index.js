@@ -16,10 +16,8 @@ import './_dropdown.scss';
 
 export const name = 'dropdown';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

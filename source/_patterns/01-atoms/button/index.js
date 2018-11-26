@@ -19,11 +19,10 @@ import './_button.scss';
 
 export const name = 'button';
 
-export function disable() {
-}
+export function disable() {}
 
 export function enable($context) {
-    $('#blah', $context).button('toggle');
+  $('#blah', $context).button('toggle');
 }
 
 export default enable;

@@ -9,18 +9,18 @@ $card-border-width: 1px;
 
 // Add custom code here
 .border-none {
-    border-style: none;
+  border-style: none;
 }
 
 .card {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .card-title {
-    font-family: $font-family-serif;
-    font-size: $h2-font-size;
+  font-family: $font-family-serif;
+  font-size: $h2-font-size;
 }
 
 .card-body {
-    padding: $spacer-lg;
+  padding: $spacer-lg;
 }

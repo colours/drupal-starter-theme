@@ -21,17 +21,21 @@ pagination_other_classes,
                 {% if page_icon %}
                     <span aria-hidden="true">&laquo;</span>
                 {% endif %}
-                <span {{ (page_icon) ? 'class="sr-only"' }}>{{ 'Previous'|t }}</span> </a>
+                <span {{ (page_icon) ? 'class="sr-only"' }}>{{ 'Previous'|t }}</span>
+            </a>
         </li>
         {% for item in page_items %}
-            <li class="page-item"><a class="page-link" href="{{ item.link }}">{{ item.title }}</a></li>
+            <li class="page-item">
+                <a class="page-link" href="{{ item.link }}">{{ item.title }}</a>
+            </li>
         {% endfor %}
         <li class="page-item">
             <a class="page-link" href="#" aria-label="{{ 'Next'|t }}">
                 {% if page_icon %}
                     <span aria-hidden="true">&raquo;</span>
                 {% endif %}
-                <span {{ (page_icon) ? 'class="sr-only"' }}>{{ 'Next'|t }}</span> </a>
+                <span {{ (page_icon) ? 'class="sr-only"' }}>{{ 'Next'|t }}</span>
+            </a>
         </li>
     </ul>
 </nav>

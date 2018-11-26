@@ -4,16 +4,13 @@ helper_card_text: 'Variables: <code>card_subtitle, text_alignment, card_link, ca
 
 helper_card_text_2: 'Grid: This row uses the pattern lab "grid-3" atom located in <code>source/_patterns/01-atoms/grid</code>'
 
-helper_card_width: 'Variables: <code>card_width</code><p>Grid: This row is occupying the whole container by using the <code>col-sm-12</code> class.'
+helper_card_width: "Variables: <code>card_width</code><p>Grid: This row is occupying the whole container by using the <code>col-sm-12</code> class."
 
+helper_card_image: "Variables: <code>card_image, card_image_location, card_image_overlay</code><p>Grid: This row is using the  <code>card-deck</code> class which is unique to cards. It sets all of its cards to an equal width and height.</p>"
 
-helper_card_image: 'Variables: <code>card_image, card_image_location, card_image_overlay</code><p>Grid: This row is using the  <code>card-deck</code> class which is unique to cards. It sets all of its cards to an equal width and height.</p>'
+helper_card_structure: "Variables: <code>card_header, card_footer, button_text, button_color, card_list</code><p>Grid: This row is using the <code>card-group</code> class which is unique to cards. It renders cards as a single, attached element with equal width and height columns.</p>"
 
-
-helper_card_structure: 'Variables: <code>card_header, card_footer, button_text, button_color, card_list</code><p>Grid: This row is using the <code>card-group</code> class which is unique to cards. It renders cards as a single, attached element with equal width and height columns.</p>'
-
-
-helper_card_colors: 'Variables: <code>card_background, card_border</code><p>Grid: This row is using the <code>card-columns</code> class which is unique to cards. It renders cards in the optimal position based on vertical space. </p>'
+helper_card_colors: "Variables: <code>card_background, card_border</code><p>Grid: This row is using the <code>card-columns</code> class which is unique to cards. It renders cards in the optimal position based on vertical space. </p>"
 
 helper_card_blocks: "This example card uses twig's block system to override the provided default body template with new elements"
 
@@ -27,8 +24,8 @@ text_card_2:
   card_title: Card Title
   card_text: Some quick example text to build on the card title and make up the bulk of the card's content.
   card_subtitle: Card subtitle
-  card_link: 'https://github.com/phase2/particle'
-  card_link_text: 'Card link'
+  card_link: "https://github.com/phase2/particle"
+  card_link_text: "Card link"
 
 text_card_3:
   card_title: Card Title
@@ -89,9 +86,9 @@ list_card:
   list:
     list_flush: True
     items:
-    - item_text: Cras justo odio
-    - item_text: Dapibus ac facilisis in
-    - item_text: Vestibulum at eros
+      - item_text: Cras justo odio
+      - item_text: Dapibus ac facilisis in
+      - item_text: Vestibulum at eros
 
 card_background_1:
   card_title: Card Title

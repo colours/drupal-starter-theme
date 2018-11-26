@@ -24,23 +24,22 @@ component-libraries:
       - ../../source/_patterns/01-atoms
       - ../../source/_patterns/01-atoms/grid
       - ../../source/_patterns/01-atoms/icon
-      - ../../source/_patterns/01-atoms/alert
       - ../../source/_patterns/01-atoms/badge
+      - ../../source/_patterns/01-atoms/alert
       - ../../source/_patterns/01-atoms/image
       - ../../source/_patterns/01-atoms/button
       - ../../source/_patterns/01-atoms/picture
       - ../../source/_patterns/01-atoms/branding
       - ../../source/_patterns/01-atoms/dropdown
       - ../../source/_patterns/01-atoms/breadcrumb
-      - ../../source/_patterns/01-atoms/list-group
   molecules:
     paths:
       - ../../source/_patterns/02-molecules
       - ../../source/_patterns/02-molecules/nav
       - ../../source/_patterns/02-molecules/card
       - ../../source/_patterns/02-molecules/carousel
-      - ../../source/_patterns/02-molecules/link-list
       - ../../source/_patterns/02-molecules/jumbotron
+      - ../../source/_patterns/02-molecules/link-list
       - ../../source/_patterns/02-molecules/pagination
       - ../../source/_patterns/02-molecules/text-column
       - ../../source/_patterns/02-molecules/example-widget
@@ -51,8 +50,8 @@ component-libraries:
       - ../../source/_patterns/03-organisms/header
       - ../../source/_patterns/03-organisms/navbar
       - ../../source/_patterns/03-organisms/article
-      - ../../source/_patterns/03-organisms/card-grid
       - ../../source/_patterns/03-organisms/accordion
+      - ../../source/_patterns/03-organisms/card-grid
       - ../../source/_patterns/03-organisms/tab-content
       - ../../source/_patterns/03-organisms/text-sidebar
       - ../../source/_patterns/03-organisms/action-button

@@ -22,8 +22,8 @@ export const name = 'tabContent';
 export function disable() {}
 
 export function enable($context) {
-    // We have to glue this app to some piece of DOM
-    tabContent($('#js-tab-content', $context));
+  // We have to glue this app to some piece of DOM
+  tabContent($('#js-tab-content', $context));
 }
 
 export default enable;

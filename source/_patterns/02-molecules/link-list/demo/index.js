@@ -13,7 +13,7 @@ import yaml from './link-lists.yml';
 import markdown from './link-lists.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

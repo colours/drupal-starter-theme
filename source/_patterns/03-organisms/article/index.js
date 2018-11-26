@@ -13,10 +13,8 @@ import './_article.scss';
 
 export const name = 'article';
 
-export function disable() {
-}
+export function disable() {}
 
-export function enable() {
-}
+export function enable() {}
 
 export default enable;

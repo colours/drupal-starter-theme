@@ -13,7 +13,7 @@ import yaml from './text-columns.yml';
 import markdown from './text-columns.md';
 
 export default {
-    twig,
-    yaml,
-    markdown,
+  twig,
+  yaml,
+  markdown,
 };

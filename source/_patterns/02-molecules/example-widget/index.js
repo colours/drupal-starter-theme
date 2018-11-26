@@ -24,12 +24,11 @@ import exampleWidget from './src';
 
 export const name = 'example-widget';
 
-export function disable() {
-}
+export function disable() {}
 
 export function enable($context) {
-    // We have to glue this app to some piece of DOM
-    exampleWidget($('#js-example-widget', $context));
+  // We have to glue this app to some piece of DOM
+  exampleWidget($('#js-example-widget', $context));
 }
 
 export default enable;

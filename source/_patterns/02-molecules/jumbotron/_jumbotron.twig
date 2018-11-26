@@ -23,7 +23,7 @@ jumbotron_other_classes,
 ] | sort | join(' ') | trim %}
 <div class="{{ jumbotron_classes }}">
     {% if jumbotron_fluid %}
-    <div class="container">
+        <div class="container">
         {% endif %}
 
         {% block jumbotron_branding %}
@@ -45,16 +45,17 @@ jumbotron_other_classes,
             {% if button_text %}
                 <p class="lead">
                     {% include "@atoms/button/_button.twig" with {
-                    button_text: button_text,
-                    button_color: button_color,
-                    button_size: button_size,
-                    button_link: button_link,
-                    } only %}
+                        button_text : button_text,
+                        button_color: button_color,
+                        button_size: button_size,
+                        button_link: button_link
+                    }
+                    only %}
                 </p>
             {% endif %}
         {% endblock header_cta %}
 
         {% if jumbotron_fluid %}
-    </div>
+        </div>
     {% endif %}
 </div>

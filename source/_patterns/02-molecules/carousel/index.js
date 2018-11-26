@@ -18,13 +18,12 @@ import './_carousel.scss';
 
 export const name = 'carousel';
 
-export function disable() {
-}
+export function disable() {}
 
 export function enable($context) {
-    $('.carousel', $context).carousel({
-        interval: 3000,
-    });
+  $('.carousel', $context).carousel({
+    interval: 3000,
+  });
 }
 
 export default enable;

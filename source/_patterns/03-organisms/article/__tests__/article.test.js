@@ -1,5 +1,5 @@
-import {name} from '../';
+import { name } from '../';
 
 test('article component is registered', () => {
-    expect(name).toBe('article');
+  expect(name).toBe('article');
 });

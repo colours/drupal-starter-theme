@@ -5,5 +5,5 @@
 import './_base.scss';
 
 export default {
-    GLOBAL_CONSTANT: 'blerp',
+  GLOBAL_CONSTANT: 'blerp',
 };
