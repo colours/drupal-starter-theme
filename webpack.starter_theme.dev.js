@@ -25,7 +25,6 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 const IconFontPlugin = require('iconfont-plugin-webpack');
 // Helper file used to generate a svg -> fonticon Sass map.
 const IconFontTemplate = require('./source/_patterns/01-atoms/icon/templates/iconfont-template');
-const GoogleFontsPlugin = require('google-fonts-plugin').default;
 
 // Helps us track down deprecation during development
 process.traceDeprecation = true;
@@ -148,7 +147,6 @@ module.exports = {
             },
             cssTemplate: IconFontTemplate,
         }),
-        new GoogleFontsPlugin(path.resolve(__dirname, PATH_SOURCE, '_patterns/00-protons/fonts/googleFontConfig.json')),
     ],
     // Shorthand to import modules, i.e. `import thing from 'atoms/thing'`
     resolve: {
