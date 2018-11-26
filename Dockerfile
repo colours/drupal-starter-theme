@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:10
 RUN apt-get update && \
     apt-get install -y php5-dev  && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
