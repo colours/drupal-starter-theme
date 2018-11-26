@@ -5,28 +5,27 @@
  * Individual rule reference: http://eslint.org/docs/rules/NAME-OF-RULE
  */
 module.exports = {
-  extends: ["airbnb", "plugin:jest/recommended"],
-  globals: {
-    Drupal: true,
-    jQuery: true,
-    _: true,
-    BUILD_TARGET: true,
-  },
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['prettier'],
   env: {
-    "browser": true,
+      "browser": true,
   },
   rules: {
-    'no-console': [0], // turned off for now while we are console.logging everywhere.
-    'react/require-extension': [0],
-    'import/no-extraneous-dependencies': ["error", {"devDependencies": true}],
-    'indent': ["warn", 4],
-      'object-curly-spacing': [2, "never"]
+      'no-console': [0], // turned off for now while we are console.logging everywhere.
+      'import/no-extraneous-dependencies': ["error", {
+          "devDependencies": true
+      }],
+      'indent': ["warn", 2],
+      'object-curly-spacing': [2, "always"],
+      'no-return-assign': [0],
+      'no-restricted-syntax': [
+          'error',
+          'ForInStatement',
+          'LabeledStatement',
+          'WithStatement',
+      ],
+      'no-underscore-dangle': [2, {
+          "allowAfterThis": true
+      }]
   },
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: 'webpack.starter_theme.dev.js'
-      }
-    }
-  }
 };
