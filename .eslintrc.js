@@ -7,6 +7,12 @@
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: ['prettier'],
+  globals: {
+    Drupal: true,
+    jQuery: true,
+    _: true,
+    BUILD_TARGET: true,
+  },
   env: {
       "browser": true,
   },
@@ -28,4 +34,11 @@ module.exports = {
           "allowAfterThis": true
       }]
   },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.starter_theme.dev.js'
+      }
+    }
+  }
 };
