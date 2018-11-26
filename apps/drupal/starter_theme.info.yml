@@ -24,8 +24,8 @@ component-libraries:
       - ../../source/_patterns/01-atoms
       - ../../source/_patterns/01-atoms/grid
       - ../../source/_patterns/01-atoms/icon
-      - ../../source/_patterns/01-atoms/badge
       - ../../source/_patterns/01-atoms/alert
+      - ../../source/_patterns/01-atoms/badge
       - ../../source/_patterns/01-atoms/image
       - ../../source/_patterns/01-atoms/button
       - ../../source/_patterns/01-atoms/picture
@@ -42,7 +42,6 @@ component-libraries:
       - ../../source/_patterns/02-molecules/link-list
       - ../../source/_patterns/02-molecules/pagination
       - ../../source/_patterns/02-molecules/text-column
-      - ../../source/_patterns/02-molecules/example-widget
   organisms:
     paths:
       - ../../source/_patterns/03-organisms

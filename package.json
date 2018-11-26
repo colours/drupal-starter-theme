@@ -43,19 +43,12 @@
         "iOS 8"
     ],
     "dependencies": {
-        "bootstrap": "^4.1.0",
-        "eslint-config-prettier": "^3.3.0",
-        "eslint-plugin-prettier": "^3.0.0",
+
         "flickity": "^2.1.2",
-        "hard-source-webpack-plugin": "^0.12.0",
         "holderjs": "^2.9.6",
-        "html-webpack-plugin": "^4.0.0-alpha",
         "jquery": "^3.3.1",
         "lodash": "^4.17.11",
-        "popper.js": "^1.14.5",
-        "redux": "^4.0.1",
-        "redux-thunk": "^2.3.0",
-        "run-plugin-webpack": "1.0.0"
+        "popper.js": "^1.14.5"
     },
     "devDependencies": {
         "@babel/core": "7.1.6",
@@ -70,17 +63,21 @@
         "css-loader": "^1.0.1",
         "eslint": "^5.9.0",
         "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^3.3.0",
+
         "eslint-import-resolver-webpack": "^0.10.1",
         "eslint-loader": "^2.1.1",
         "eslint-plugin-import": "^2.14.0",
         "eslint-plugin-jest": "^22.0.1",
         "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-prettier": "^3.0.0",
         "eslint-plugin-react": "^7.11.1",
-        "extract-text-webpack-plugin": "^3.0.2",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
         "file-loader": "^2.0.0",
         "glob-loader": "^0.3.0",
         "gulp": "^4.0.0",
-        "happypack": "^5.0.0",
+        "html-webpack-plugin": "^4.0.0-alpha",
+
         "iconfont-plugin-webpack": "^1.1.2",
         "jest": "^23.6.0",
         "js-yaml": "^3.12.0",
@@ -89,8 +86,8 @@
         "postcss-loader": "^3.0.0",
         "regenerator-runtime": "^0.13.1",
         "sass-extract": "^2.1.0",
+        "sass-flex-mixin": "^1.0.3",
         "sass-loader": "^7.1.0",
-        "speed-measure-webpack-plugin": "^1.2.3",
         "style-loader": "^0.23.1",
         "stylelint": "^9.8.0",
         "stylelint-scss": "^3.4.0",

@@ -2,8 +2,6 @@
  * Accordion
  */
 
-import 'bootstrap/js/src/collapse';
-
 // Module dependencies
 import 'protons';
 import 'atoms/button';

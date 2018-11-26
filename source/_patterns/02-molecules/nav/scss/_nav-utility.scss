@@ -1,12 +1,5 @@
 @import '../../../00-protons/variables';
 
-// To change default bootstrap nav variables,
-// copy from ~bootstrap/scss/variables to here
-
-$nav-link-disabled-color: $gray-600;
-
-@import "~bootstrap/scss/nav";
-
 .navbar__utility div {
   display: inline-block;
 }
@@ -16,7 +9,7 @@ $nav-link-disabled-color: $gray-600;
   left: 0;
 }
 
-@include media-breakpoint-down(md) {
+@include media('<md') {
   .nav--utility {
     flex-direction: column;
 
@@ -46,13 +39,13 @@ $nav-link-disabled-color: $gray-600;
   }
 }
 
-@include media-breakpoint-up(lg) {
+@include media('>lg') {
   .navbar__utility {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: $c-anti-flash-white;
-    box-shadow: 500px 0 0 $c-anti-flash-white;
+    background-color: $c-off-white;
+    box-shadow: 500px 0 0 $c-off-white;
 
     .nav {
       display: inline-flex;

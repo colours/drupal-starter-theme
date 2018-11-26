@@ -11,12 +11,7 @@
 /// This guarantees both de-duplication and existence of required, generated CSS.
 ///
 @import 'variables';
-// Bootstrap CSS-generating output
-@import '~bootstrap/scss/root';
-@import '~bootstrap/scss/print';
-@import '~bootstrap/scss/reboot';
-@import '~bootstrap/scss/utilities';
-@import '~bootstrap/scss/code';
+@import 'non-printing/flexboxgrid';
 
 // Custom CSS-generating output
 @import 'printing/type';

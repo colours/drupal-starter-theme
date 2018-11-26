@@ -4,17 +4,5 @@ $c-blue: #0578be !default;
 $c-cadet: #5b6670 !default;
 $c-black: #000 !default;
 $c-silver: #bdc2c6 !default;
-$c-anti-flash-white: #eeeff0 !default;
-
-// Bootstrap overrides
-// Add colors to $theme-colors var here. Find other vars to override at ~bootstrap/scss/_variables.scss
-// Be sure to add new colors in quotes.
-$theme-colors: ('primary': $c-blue,
-'secondary': white,
-'c-orange': $c-orange,
-'c-blue': $c-blue,
-'c-cadet': $c-cadet,
-'c-black': $c-black,
-'c-silver': $c-silver,
-'c-anti-flash-white': $c-anti-flash-white,
-);
+$c-off-white: #eeeff0 !default;
+$white: #ffffff;

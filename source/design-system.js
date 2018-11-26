@@ -13,7 +13,6 @@ import * as icon from 'atoms/icon';
 import * as nav from 'molecules/nav';
 import * as card from 'molecules/card';
 import * as carousel from 'molecules/carousel';
-import * as exampleWidget from 'molecules/example-widget';
 import * as jumbotron from 'molecules/jumbotron';
 import * as pagination from 'molecules/pagination';
 import * as linkList from 'molecules/link-list';
@@ -43,7 +42,6 @@ const components = {
   nav,
   card,
   carousel,
-  exampleWidget,
   jumbotron,
   pagination,
   linkList,

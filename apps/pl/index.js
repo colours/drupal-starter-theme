@@ -18,7 +18,6 @@ import './demo/data.glob';
 
 // Adds PL-only styles, ie color swatches.
 import './scss/_styleguide.scss';
-import './scss/_scss2json.scss';
 
 // Send each component the $(document) as its context
 const $context = $(document);

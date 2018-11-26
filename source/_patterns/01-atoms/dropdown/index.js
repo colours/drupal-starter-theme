@@ -2,9 +2,6 @@
  * Dropdown
  */
 
-// Import dropdown js from bootstrap
-import 'bootstrap/js/src/dropdown';
-
 // Custom
 import 'protons';
 

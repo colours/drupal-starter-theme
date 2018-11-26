@@ -19,8 +19,10 @@
 @import 'non-printing/functions';
 @import 'non-printing/colors';
 @import 'non-printing/mixins';
+@import "non-printing/media-query";
 
 $spacer: 1.25rem; // 20
+$spacer-xxs: $spacer * 0.1; // 2
 $spacer-xs: $spacer * 0.25; // 5
 $spacer-sm: $spacer * 0.5; // 10
 $spacer-md: $spacer * 1.5; // 15
@@ -28,84 +30,68 @@ $spacer-lg: $spacer * 2; // 40
 $spacer-xl: $spacer * 4; // 80
 $spacer-xxl: $spacer * 6; // 120
 
-// (Other non-printing .scss), ie font families, spacing, etc
-$spacing: (s: 5px,
-m: 25px,
-l: 50px,
+// Grid settings
+$grid-columns: 6 8 9 12 16 24;
+$grid: 24;
+$gutter-width: 1rem;
+$outer-margin: 2rem;
+
+// Grid settings
+$breakpoints: xxs 0px 100%,
+  xs 480px 100%,
+  sm 576px 100%,
+  md 768px 100%,
+  lg 992px 100%,
+  xl 1200px 70rem,
+  xxl 1440px 80rem;
+$flexboxgrid-max-width: 70rem;
+
+// Media queries.
+$mq-breakpoints: (
+  xxs: 0,
+  xs: 480,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
 );
-
-// This is a good place to globally override bootstrap variables that aren't
-// just overridden in a component later on.
-
-// Bootstrap non-printing tools
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-
-// import anything else non-printing that may depend on variables in this file!
-// @import 'non-printing/project-specific-mixins'
-
-// Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
-$grid-breakpoints: (xs: 0,
-sm: 576px,
-md: 768px,
-lg: 992px,
-xl: 1200px);
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
-$container-max-widths: (xl: 1180px);
-
-// global options
-$enable-rounded: false;
 
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-base: 'Open Sans', sans-serif;
-$font-family-sans-serif: $font-family-base;
-$font-family-serif: 'ffscalaweb', serif;
-$headings-font-family: $font-family-serif;
+// Typography
+$font-family-body: Arial, Helvetica, sans-serif;
+$font-family-serif: serif;
+$headings-font-family: serif;
+$headings-font-secondary: sans-serif;
 
-$headings-font-secondary: $font-family-base;
-
+// Add any font sizes the site used
 $font-size-base: 1.125rem; // Assumes the browser default, typically `16px` so 18px
-$font-size-xxl: 1.75rem; // 28
-$font-size-xl: 1.5625rem; // 25
-$font-size-lg: 1.25rem; // 20
+$font-size-xxl: 1.6875rem; // 27
+$font-size-xl: 1.5rem; // 24
+$font-size-lg: 1.375rem; // 22
+$font-size-md: 1.25rem; // 20
 $font-size-sm: 1rem; // 16
 $font-size-xs: 0.875rem; // 14
 $font-size-xxs: 0.75rem; // 12
+$line-height-base: 1.645em;
+$line-height-sm: 1.3125em;
 
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 600;
-$font-weight-extra-bold: 700;
+$h1-font-size:                $font-size-base * 2.889; // 52
+$h2-font-size:                $font-size-base * 2.334; // 42
+$h3-font-size:                $font-size-base * 1.667; // 30
+$h4-font-size:                $font-size-base * 1.334; // 24
+$h5-font-size:                $font-size-base * 1.112; // 20
+$h6-font-size:                $font-size-base; // 18
+$blockquote-font-size:        $font-size-base * 2.334; // 42
 
-$font-weight-base: $font-weight-normal;
-$line-height-base: 1.6875;
+$font-size-menu: $font-size-base;
+$font-size-menu-s: $font-size-base * 0.80;
 
-$h1-font-size: $font-size-base * 2.889; // 52
-$h2-font-size: $font-size-base * 2.334; // 32
-$h3-font-size: $font-size-base * 1.667; // 30
-$h4-font-size: $font-size-base * 1.334; // 24
-$h5-font-size: $font-size-base * 1.112; // 20
-$h6-font-size: $font-size-base; // 18
-
-// Colors
-
-$body-color: $c-cadet;
-$link-color: theme-color('primary') !default;
-
-// Navbar
-$navbar-light-color: $link-color;
-$navbar-light-hover-color: rgba($black, .7) !default;
-$navbar-light-active-color: $link-color;
-$navbar-light-disabled-color: rgba($black, .3) !default;
+// Font weight
+$font-weight-thin: 100;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;

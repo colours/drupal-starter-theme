@@ -4,9 +4,6 @@
 
 // Module dependencies
 import $ from 'jquery';
-import 'bootstrap/js/src/util';
-import 'bootstrap/js/src/tab';
-
 import 'protons';
 
 // Module styles

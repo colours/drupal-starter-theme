@@ -3,8 +3,6 @@
  */
 
 import $ from 'jquery';
-import 'bootstrap/js/src/util';
-import 'bootstrap/js/src/carousel';
 
 // Module dependencies
 import 'protons';

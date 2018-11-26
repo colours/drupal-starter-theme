@@ -3,7 +3,6 @@
  */
 
 import $ from 'jquery';
-import 'bootstrap/js/src/button';
 
 // Custom
 import 'protons';

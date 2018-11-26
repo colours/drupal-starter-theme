@@ -10,7 +10,7 @@
     font-size: $font-size-sm;
     margin: $spacer 0;
 
-    @include media-breakpoint-up(lg) {
+    @include media('>lg') {
       width: 48%;
     }
 

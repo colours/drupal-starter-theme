@@ -2,7 +2,7 @@
 @import '../../00-protons/variables';
 
 .tab-content {
-  @include media-breakpoint-up(md) {
+  @include media('>md') {
     .col--tab-nav {
       padding-right: $spacer-lg;
       border-right: 4px solid $c-blue;
@@ -32,7 +32,7 @@
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media('>md') {
   .tab-container {
     padding: $spacer-md 0;
   }
