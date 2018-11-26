@@ -38,9 +38,15 @@ Particle builds design systems in dev mode for local hosting, or production mode
 1. Within the extracted folder run:
 
 ```bash
-npm install
-npm run setup
-npm start
+yarn install
+yarn run setup
+yarn start
+```
+
+### Build assets for Drupal
+In the future this will only be necessary if you run a local Drupal setup.
+```
+yarn run build:drupal
 ```
 
 Simply wait until the webpack bundle output appears then visit [http://0.0.0.0:8888/pl](http://0.0.0.0:8888/pl) (or [http://localhost:8888/pl](http://localhost:8888/pl)) and start working.
